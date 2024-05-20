@@ -1,6 +1,11 @@
 # ChatGLM3-Finetuning
 A chinese finetuning example code for ChatGLM3 model, offering traing and predict code and basic usage.
 
+# TODO
+- [x] lora finetuning
+- [x] deepspeed的支持
+- [ ] 使用开源数据集进行大规模训练 
+
 # Lora
 - 在原始 PLM (Pre-trained Language Model) 旁边增加一个旁路，做一个降维再升维的操作，来模拟所谓的intrinsic rank；
 - 训练的时候固定 PLM 的参数，只训练降维矩阵 AAA 与升维矩阵 BBB 。而模型的输入输出维度不变，输出时将 BABABA 与 PLM 的参数叠加；
